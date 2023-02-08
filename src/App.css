@@ -1,0 +1,20 @@
+.App {
+  padding: 50px;
+}
+
+.item-example {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 769px) {
+  .App {
+    padding-inline: 10px;
+  }
+}

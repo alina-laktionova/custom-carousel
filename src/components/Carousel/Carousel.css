@@ -1,0 +1,97 @@
+.carousel-wrapper {
+    padding: 20px 30px;
+    background-color: #f8f5f3;
+    border: 1px solid #c8c4c0;
+    position: relative;
+}
+
+.carousel {
+    overflow: hidden;
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 0.3s;
+}
+
+.indicators {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.indicator-btn {
+    margin: 5px;
+    height: 10px;
+    width: 10px;
+    padding: 0;
+    border-radius: 100%;
+    border: 1px solid #858585;
+    cursor: pointer;
+}
+
+.indicator-btn-active {
+    background: #f15c02;
+    border: 2px solid #f15c02;
+}
+
+.nav-btn {
+    position: absolute;
+    bottom: 45%;
+    width: 35px;
+    height: 50px;
+    background-color: #ffffffad;
+    border: solid 1px #c8c4c0;
+    padding: 14px 8px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.nav-btn:hover {
+    opacity: 1;
+}
+
+.nav-btn-prev {
+    left: 15px;
+}
+
+.nav-btn-next {
+    right: 15px;
+}
+
+.arrow {
+    display: block;
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-left: 3px solid #4186ad;
+    border-bottom: 3px solid #4186ad;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.arrow-prev {
+    transform: rotate(45deg);
+    margin-left: -3px;
+}
+
+.arrow-next {
+    transform: rotate(225deg);
+    margin-left: -8px;
+}
+
+.display-none {
+    display: none;
+}
+
+@media screen and (max-width: 769px) {
+    .nav-btn {
+        display: none;
+    }
+
+    .carousel-wrapper {
+        padding: 20px 1px;
+    }
+}
